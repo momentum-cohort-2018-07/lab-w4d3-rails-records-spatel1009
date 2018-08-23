@@ -1,0 +1,4 @@
+<% @albums.each do |album| %>
+<li><%=album.year%> <%=album.name%> <%= album.title %> <%= link_to "destroy", album, method: :delete %> </li>
+    
+<% end %>
